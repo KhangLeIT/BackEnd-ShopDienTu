@@ -21,6 +21,7 @@ const createOrder = async (req, res) => {
 const getAllOrderDetails = async (req, res) => {
     try {
         const userId = req.params.id
+    
         if (!userId) {
             return res.status(200).json({
                 status: 'ERR',
